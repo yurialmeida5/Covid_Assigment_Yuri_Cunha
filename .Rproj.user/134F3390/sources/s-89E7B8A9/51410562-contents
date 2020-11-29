@@ -1,0 +1,37 @@
+---
+title: "Covid Assigment"
+subtitle: "Yuri Almeida Cunha"
+output: pdf_document
+---
+
+## Executive Summary
+
+On the following project, I checked the possible association between the number of confirmed Covid cases and their number of deaths associated with the disease by country on a given day. Using the Weighted - OLS model, considering the population size as the weight, I was able to reach a well-fitted model for the following dataset. The models states that the increase of the number of confirmed cases increases on average the number of deaths associated with the disease, and that the population numbers play an important role on that. It's important to mention that the data acquired may have some integrity and reliability issues due some government data collection standards. 
+
+## Executive Summary
+
+Research Question: 
+Is there any association between number of deaths and confirmed cases on this dataset? If yes, what is it?
+Variables Description:
+death (Explanatory): number of accumulated covid deaths until a given day by country    
+confirmed (Dependent): number of accumulated confirmed covid cases until a given day by country 
+Sample: number of cases and deaths (until 29/09)  / Population: Total number of cases and deaths whole Covid season
+Possible Quality Issues: Reliability (Data integrity - Governmental Interests) , Content (Caused by Covid or simply with Covid at death moment?
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r cars}
+summary(cars)
+```

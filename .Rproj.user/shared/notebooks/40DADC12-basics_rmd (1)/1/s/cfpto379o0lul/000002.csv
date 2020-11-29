@@ -1,0 +1,3 @@
+"0","summary(hv$price)"
+"2","Error in summary(hv$price) : object 'hv' not found
+"
