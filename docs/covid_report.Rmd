@@ -39,7 +39,9 @@ library(pander)
 
 # Call the data from local file
 
-df <- read_csv('covid_pop_09_29_2020_clean.csv')
+data_path <- 'https://raw.githubusercontent.com/yurialmeida5/Covid_Assigment_Yuri_Cunha/main/data/clean/covid_pop_09_29_2020_clean.csv'
+
+df <- read_csv(data_path)
 
 ```
 
@@ -311,12 +313,13 @@ ggplot(data = df, aes(x = ln_confirmed, y = ln_death)) +
 
 ```{r}
 
+data_out <- 'D:/CEU/Data_Analysis_2/Covid_Assigment_Yuri_Cunha/out/'
 htmlreg( list(reg1 , reg2 , reg3 , reg4),
          type = 'html',
          custom.model.names = c("Linear Regression", "Quadratic (Linear) Regression","Piecewise Linear Spline",
                                 "Weighted-OLS"),
          caption = "Modelling number of deaths by covid based on number of confirmed cases",
-         file = paste0('model_comparison.html'), include.ci = FALSE)
+         file = paste0(data_out,'model_comparison.html'), include.ci = FALSE)
 
 
 ```
